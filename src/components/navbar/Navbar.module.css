@@ -6,13 +6,24 @@
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
-    gap: 40%;
+   gap: 35%;
     align-items: center;
     top: 0;
     left: 0;
     z-index: 1;
+    align-items: center;
+    
+    
   }
-  
+.part1 h1{
+  color: red;
+}
+  .part1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
   .container::before {
     content: '';
     position: absolute;
@@ -24,7 +35,7 @@
     z-index: -1;
   }
   
-  .part1 h1 {
+  .part h1 {
     padding: 0px 20px;
     font-size: 2rem;
   }
@@ -33,9 +44,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 5%;
+    gap: 8%;
     list-style: none;
     font-size: 1.5rem;
+    padding: 10px;
+    align-items: center;
   }
   
   .links li {
@@ -44,7 +57,7 @@
   
   .links li:hover {
     cursor: pointer;
-    background: #000;
+    border-bottom: 2px solid red;
   }
   
   .links button {
@@ -60,7 +73,7 @@
     background: #000;
     cursor: pointer;
     color: white;
-    border: 2px double white;
+    border: 2px double red;
   }
   
   .container2 {
@@ -75,6 +88,7 @@
     height: 100vh;
     align-items: center;
     transition: all 0.3s ease-in-out;
+    background: black;
     
   }
   .links1 button {
@@ -91,7 +105,7 @@
     background: #000;
     cursor: pointer;
     color: white;
-    border: 2px double white;
+    border: 2px double red;
   }
   
   
@@ -123,7 +137,8 @@
     }
   
     .container {
-      justify-content: space-evenly;
+      gap: 60%;
+     
 
     }
   
@@ -134,3 +149,14 @@
     }
   }
   
+  @media (width >1280px){
+    .container{
+      gap: 50%;
+    }
+    .links button {
+      
+      height: 6vh;
+      
+    }
+
+  }

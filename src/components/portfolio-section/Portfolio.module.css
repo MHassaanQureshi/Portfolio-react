@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    color: white;
+    border-bottom: 2px solid red;
+    
+    font-size: 2rem;
+}
+.projectcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    gap: 10px;
+}
+.projectscard1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

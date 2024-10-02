@@ -9,7 +9,7 @@ const Landing = () => {
             <h3>I Built things on the internet</h3>
 
         </div>
-        <button><img src="/images/hero-arrow.png" alt="" /></button>
+        
     </div>
     </>
   )
