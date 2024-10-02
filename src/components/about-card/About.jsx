@@ -7,7 +7,7 @@ const About = () => {
         <h1 className={Style.heading}>About Me</h1>
         <div className={Style.About}>
         <div className={Style.profile}>
-            <img src="/images/WhatsApp Image 2024-09-30 at 16.39.22_98f3a8a5.jpg" alt="" />
+            <img src="images/WhatsApp Image 2024-09-30 at 16.39.22_98f3a8a5.jpg" alt="" />
         </div >
         <div className={Style.container2}>
             <div className={Style.intro}>
