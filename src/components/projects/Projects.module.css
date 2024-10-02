@@ -63,3 +63,8 @@
     color: white;
     text-decoration: none;
 }
+@media (width <=500px){
+    .projectcontainer {
+        width: 80%;
+    }
+}

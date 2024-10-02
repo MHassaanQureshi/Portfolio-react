@@ -1,0 +1,64 @@
+.container{
+    padding: 20px;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.head{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    border-bottom: 2px solid red;
+}
+.parah{
+    padding: 20px;
+    width: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+.conBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.conBtn button{
+    background: red;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: white;
+}
+.conBtn button:hover{
+    cursor: pointer;
+    border-bottom: 2px solid red;
+    background: transparent;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+@media (width <=500px){
+    .container{
+        width: 80%;
+    }
+    .head{
+        font-size: 1.5rem;
+    }
+    .parah{
+        font-size: 1rem;
+
+    }
+    .links{
+        gap: 10px;
+        margin-left: -1rem;
+    }
+}

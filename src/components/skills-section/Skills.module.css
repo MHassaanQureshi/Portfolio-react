@@ -16,6 +16,9 @@
     color: white;
     border-bottom: 2px solid red;
     margin-bottom: 2rem;
+    animation-name: slide;
+    animation-duration: 4s;
+    position: relative;
     
     display: flex;
     justify-content: center;
@@ -28,7 +31,17 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+    
 }
+@keyframes slide {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
 .cards1 {
  
     display: flex;
@@ -36,4 +49,32 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    animation-name: slide2;
+    animation-duration: 4s;
+    position: relative;
+}
+@keyframes slide2 {
+    from {
+        left: -100px;
+    }
+    to {
+        left: 0px;
+    }
+}
+@media (width <=500px){
+    .main{
+        margin-top: 30rem;
+        width: 80%;
+    }
+    .Skillshead{
+        font-size: 1.5rem;
+    }
+    .cardsContainer{
+        width: 100%;
+    }
+    .cards1{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 1rem;
+    }
 }

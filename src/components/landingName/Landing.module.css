@@ -34,3 +34,13 @@
 .container2 h3{
     color: red;
 }
+@media (width <=500px){
+    .container2 h1{
+        font-size: 2rem;
+        margin-left: -2rem;
+        
+    }
+    .container2{
+        width: 70%;
+    }
+}

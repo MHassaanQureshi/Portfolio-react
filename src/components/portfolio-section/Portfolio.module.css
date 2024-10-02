@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .head{
     color: white;
@@ -28,4 +29,24 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+@media (width <=500px){
+    .container{
+        width: 80%;
+    }
+    .head{
+        font-size: 1.5rem;
+    }
+    .projectscard1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .projectcontainer{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }

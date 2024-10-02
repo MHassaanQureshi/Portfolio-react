@@ -12,6 +12,12 @@ const Navbar = () => {
   const handleButtonClick2 = () => {
       navigate('/skills'); 
   };
+  const handleButtonClick3 = () => {
+      navigate('/portfolio'); 
+  };
+  const handleButtonClick4 = () => {
+      navigate('/contact'); 
+  };
 
   // State to track mobile menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,8 +37,8 @@ const Navbar = () => {
           <ul className={Style.links}>
             <li onClick={handleButtonClick}>About</li>
             <li onClick={handleButtonClick2}>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li onClick={handleButtonClick3}>Portfolio</li>
+            <li onClick={handleButtonClick4}>Contact</li>
             <li><a href="/M.Hassaan.Resume.pdf" download="M.hassaan.pdf">
             <button>Resume</button>
                 </a>
@@ -52,10 +58,10 @@ const Navbar = () => {
       <nav className={`${Style.container2} ${isMenuOpen ? Style.showMenu : "display:block"}`}>
         <div className={Style.part4}>
           <ul className={Style.links1}>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li onClick={handleButtonClick}>About</li>
+            <li onClick={handleButtonClick2}>Skills</li>
+            <li onClick={handleButtonClick3}>Portfolio</li>
+            <li onClick={handleButtonClick4}>Contact</li>
             <a href="/M.Hassaan.Resume.pdf" download="M.hassaan.pdf">
             <button>Resume</button>
                 </a>

@@ -1,0 +1,15 @@
+.container img{
+    width: 100%;
+    padding: 10px;
+}
+.container img:hover{
+    border-bottom: 2px solid red;
+}
+@media (width <=500px){
+    .container{
+        width: 50px;
+    }
+    img{
+        width: 20px;
+    }
+}

@@ -89,8 +89,11 @@
     align-items: center;
     transition: all 0.3s ease-in-out;
     background: black;
-    
-  }
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
   .links1 button {
     width: 30vw;
     height: 8vh;
@@ -131,23 +134,6 @@
     display: none;
   }
   
-  @media (max-width: 768px) {
-    .links {
-      display: none;
-    }
-  
-    .container {
-      gap: 60%;
-     
-
-    }
-  
-    /* Mobile menu is hidden by default */
-    
-    .part2 img {
-        display: block;
-    }
-  }
   
   @media (width >1280px){
     .container{
@@ -158,5 +144,77 @@
       height: 6vh;
       
     }
+    
+  }
+
+  /* Existing styles for wider screens here */
+
+/* Media query for devices with width less than or equal to 500px */
+@media (max-width: 500px) {
+  
+  .container {
+    gap: 10%;
+    padding: 5px;
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .part1 h1 {
+    font-size: 1.5rem; /* Smaller font size for headings */
+  }
+  
+  .links {
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px;
+    padding: 0;
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .links li {
+    padding: 5px;
+  }
+
+  .links button {
+    width: 60vw; /* Adjust button width */
+    height: 6vh; /* Adjust button height */
+    padding: 0;
+  }
+
+  .links1 {
+    gap: 15px;
+    font-size: 1.2rem; /* Smaller font for links in mobile menu */
+  }
+
+  .links1 button {
+    width: 80vw; /* Adjust button width */
+    height: 6vh; /* Adjust button height */
+  }
+
+  .container2 {
+    width: 100%; /* Full width for the mobile menu */
+    height: 100vh;
+    padding: 10px; /* Padding for spacing */
+  }
+
+  .part2 img {
+    width: 25px; /* Adjust icon size for smaller screens */
+  }
+
+  .container::before {
+    display: none; /* Hide the background element on smaller screens if not needed */
+  }
+  .links {
+    display: none;
+  }
+
+  .container {
+    gap: 60%;
+   
 
   }
+
+  /* Mobile menu is hidden by default */
+  
+  .part2 img {
+      display: block;
+  }
+}
